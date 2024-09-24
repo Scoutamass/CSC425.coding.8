@@ -1,5 +1,7 @@
 Scout Megyesi
   2. 
-  4. 
-  7. 
-  8. 
+total  used  free  shared  buff/cache  available
+7938   1021  178   61      6738        6541
+  4. It uses 18mb to allocate 10mb. It makes sense that it would need more space to allocate just 10mb, since the process has other things it needs to keep track of. Trying to allocate huge amounts of memory actually made my used memory in the system go down
+  7. There are many pieces that make up a program's address space
+  8. There are a lot of smaller pieces of memory allocated for my process, but I can pick out which one is actually allocating the memory I asked for since it's so close to what it should be for that size of memory
